@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 **************************/
 
 .header-middle{
-  background: #CEEDD3;
+  background: #D8F3CF;
 }
 
 .header-middle .container .row {
@@ -135,7 +135,7 @@ ul.sub-menu {
 	position: static;
 	top: 30px;
 	left: 0;
-	background: #CEEDD3;
+	background: #D8F3CF;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -192,7 +192,7 @@ ul.sub-menu {
 **************************/
 
 #footer {
-  background: #CEEDD3;
+  background: #D8F3CF;
 }
 
 
@@ -245,7 +245,7 @@ ul.sub-menu {
 }
 
 .footer-bottom {
-  background: #CEEDD3;
+  background: #D8F3CF;
   padding-top: 10px;
 }
 
