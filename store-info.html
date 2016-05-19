@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | 88 Farmers Market</title>
+    <title>Store Info | 88 Farmers Market</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
+
 </head><!--/head-->
 
 <body>
@@ -26,7 +27,7 @@
 					<div class="col-sm-4">
 						<div class="logo pull-left">
 							<a href="index.html" id="logo">
-								<img src="images/home/88mkt.PNG" id="logo-resize" alt="" />
+								<img src="images/home/logo.jpg" id="logo-resize" alt="" />
 							</a>
 						</div>
 					</div>
@@ -48,14 +49,14 @@
 
                                 </ul>
                             </li> 
-							<li class="dropdown"><a href="#">Contact<i class="fa fa-angle-down"></i></a>
+							<li class="dropdown"><a href="#" class="active">Contact<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="default.html">Career</a></li>
                                     <li><a href="default.html">Leasing</a></li>
                                     <li><a href="store-info.html">Store Info</a></li>
                                 </ul>
                             </li> 	
-                            <li><a href="about.html" class="active">About</a></li>	
+                            <li><a href="about.html">About</a></li>	
                         </ul>
 					</div>
 				</div>
@@ -63,106 +64,36 @@
 		</div><!--/header-middle-->
 	
 		<div class="header-bottom"><!--header-bottom-->
+			
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	
-	<section id="slider"><!--slider-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#slider-carousel" data-slide-to="1"></li>
-							<li data-target="#slider-carousel" data-slide-to="2"></li>
-						</ol>
-						
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free E-Commerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/dfruit.jpeg" class="carousel-item img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>100% Responsive Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/peppersnshit.jpg" class="carousel-item img-responsive" alt="" />
-								</div>
-							</div>
-							
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free Ecommerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/bm.jpg" class="carousel-item img-responsive" alt="" />
-								</div>
-							</div>
-							
-						</div>
-						
-						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section><!--/slider-->
 	
 	<section>
 		<div class="container">
 			<div class="row">
-				
 				<div class="col-sm-15 ">
-					<div class="featured_items"><!--featured_items-->
-						<h2 class="title text-center">Featured</h2>
-						<div class="col-sm-4">
+					<div class="page-description">
+						<h1 class="title text-center">Store Information</h1>
+						<div class="header-bottom"></div>
+						<div class="col-sm-5">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/home/produce.jpe" alt="" />
-											<p>Produce</p>
-										</div>
+									<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+									<div style='overflow:hidden;height:320px;width:455px;'>
+										<div id='gmap_canvas' style='height:320px;width:455px;'></div>
+										<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+									</div>
+									
+									<script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(29.8751535,-90.11073829999998),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.8751535,-90.11073829999998)});infowindow = new google.maps.InfoWindow({content:'<strong>88 Farmers Market</strong><br>5990 Lapalco Blvd<br>70072 Marrero<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/seafood.jpg" alt="" />
-										<p>Meat & Seafood</p>
-									</div>
-								</div>
+						<div class="col-sm-6">
+							<div class="page-description">
+								<p>88 Farmers Market will be located at 5990 Lapalco Blvd, Marrero, LA 70072</p> 
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/cafeteria.jpg" alt="" />
-										<p>Foods</p>
-									</div>
-								</div>
-							</div>
-						</div>						
-					</div><!--featured_items-->		
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -170,7 +101,7 @@
 	
 	<footer id="footer"><!--Footer-->
 
-		
+
 		<div class="footer-widget">
 			<div class="container">
 				<div class="row">
@@ -218,8 +149,7 @@
 	</footer><!--/Footer-->
 	
 
-  
-	<script src="js/jquery.js"></script>
+  	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
