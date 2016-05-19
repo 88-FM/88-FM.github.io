@@ -10,6 +10,11 @@
   height:350px;
 }
 
+#center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #logo-resize{
   width:200px;
   height:auto;
